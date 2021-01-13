@@ -23,7 +23,7 @@ const App = () => {
         .catch((err) => console.log(err));
     }
     
-  }, [searchText,currentPage]);
+  }, [searchText]);
 
   const handleTextChange = ({ target: { value } }) => {
     setError("");
