@@ -17,8 +17,6 @@ const App = () => {
         .then((res) => res.json())
         .then((res) => {
           setMovies(res.results);
-          setCurrentPage(res.page)
-          setLastPage(res.total_pages);
         })
         .catch((err) => console.log(err));
     }
@@ -41,8 +39,6 @@ const App = () => {
       .then((res) => res.json())
       .then((res) => {
         setMovies(res.results);
-        setCurrentPage(res.page)
-        setLastPage(res.total_pages);
       })
       .catch((err) => console.log(err));
   };
